@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <link rel="icon" href="https://zeuss.b-cdn.net/riohacks/static/img/favicon.ico" />
+  <meta property="og:title" content="RioHacks - Soluções em Tecnologia" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="A RioHacks é uma empresa de tecnologia especializada no desenvolvimento de software personalizado, automação de processos, integração de sistemas e soluções de IA para transformar negócios." />
+  <meta name="description" content="A RioHacks é uma empresa de tecnologia especializada no desenvolvimento de software personalizado, automação de processos, integração de sistemas e soluções de IA para transformar negócios." />
+  <meta property="og:image" content="https://zeuss.b-cdn.net/riohacks/static/img/riohacks-icon.png" />
+  <meta property="og:url" content="https://riohacks.com.br/" />
+  <meta property="og:site_name" content="RioHacks" />
+  <meta name="author" content="RioHacks Team" />
+  <meta name="keywords" content="software, tecnologia, automação, inteligência artificial, aprendizado de máquina, SEO, sistemas, websites, desenvolvimento de software, Santarém" />
+  {# noindex #}
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const deviceWidth = window.innerWidth;
+      const viewport = document.querySelector('meta[name="viewport"]');
+
+      if (deviceWidth < 900) {
+        // Si el ancho del dispositivo es menor a 700px, forzamos un ajuste
+        const scale = deviceWidth / 700; // Escala para ajustar el contenido a 700px
+        viewport.setAttribute("content", `width=700, initial-scale=${scale}, maximum-scale=${scale}, user-scalable=no`);
+      } else {
+        // Para dispositivos más anchos, mantenemos la vista normal
+        viewport.setAttribute("content", "width=device-width, initial-scale=1, user-scalable=no");
+      }
+    });
+  </script>
+  <title>RioHacks - Soluções em Tecnologia</title>
+  <link href="static/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://icons.getbootstrap.com/assets/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="static/script.js"></script>
+  <meta name="apple-touch-icon" content="https://zeuss.b-cdn.net/riohacks/static/img/favicon.ico">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3/animate.min.css" />
+  <script src="https://kit.fontawesome.com/25f85401a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar-sup">
+      <img class="logo-heading" onclick="window.location.href='';" src="https://zeuss.b-cdn.net/riohacks/static/img/horizontal-riohacks-logo.png" alt="RioHacks Logo">
+      <img class="logo-heading mobile" onclick="window.location.href='';" src="https://zeuss.b-cdn.net/riohacks/static/img/riohacks-icon.png" alt="RioHacks Logo">
+      <div class="navbar-link" onclick="window.location.href='#servicos'">
+        Serviços
+      </div>
+      <div class="navbar-link" onclick="window.location.href='#clientes'">
+        Clientes
+      </div>
+      <div class="navbar-link" onclick="window.location.href='#contato'">
+        Contato
+      </div>
+      <div class="btn-header" id="button-contact-us" onclick="window.open('https://wa.me/5593984010771', '_blank');" style="position:relative">
+        <i class="fa-solid fa-star" id="star-animation" style="position: absolute !important;top: -15px !important;left: -15px !important;font-size: 35px !important;z-index: 1 !important; pointer-events: none !important;transition: all 0.3s ease !important; color:white"></i>
+
+          Conheça nossas soluções
+          
+        <i class="fa-solid fa-star" id="star-animation" style="position: absolute !important;bottom: -5px !important;right: -5px !important;font-size: 20px !important;z-index: 1 !important; pointer-events: none !important;transition: all 0.3s ease !important; color:white"></i>
+        
+      </div>
+      <div class="menu-drawer" onclick="openDrawer()"><i class="fa-solid fa-bars"></i></div>
+    </div>
+
+
+    <div id="overlay" onclick="closeDrawer()"></div>
+    <div id="side-panel">
+      <img id="logo-heading" onclick="window.location.href='';" src="https://zeuss.b-cdn.net/riohacks/static/img/riohacks-icon.png" alt="Riohacks Logo">
+      <div class="close-btn" onclick="closeDrawer()"><i class="fa-solid fa-xmark"></i></div>
+      <ul class="menu-options">
+        <li><a href="#servicos" onclick="closeDrawer()">Nossos Serviços</a></li>
+        <li><a href="#clientes" onclick="closeDrawer()">Nossos Clientes</a></li>
+        <li><a href="#contato" onclick="closeDrawer()">Fale Conosco</a></li>
+      </ul>
+      <div class="btn-header" id="button-contact-us" onclick="window.open('https://wa.me/5593984010771', '_blank');" style="margin:auto; font-size: 50px; position:relative">
+        <i class="fa-solid fa-star" id="star-animation" style="position: absolute !important;top: -15px !important;left: -15px !important;font-size: 35px !important;z-index: 1 !important; pointer-events: none !important;transition: all 0.3s ease !important; color:white"></i>
+
+          Conheça nossas soluções
+          
+        <i class="fa-solid fa-star" id="star-animation" style="position: absolute !important;bottom: -5px !important;right: -5px !important;font-size: 20px !important;z-index: 1 !important; pointer-events: none !important;transition: all 0.3s ease !important; color:white"></i>
+        
+      </div>
+      <img class="circuits-sidepanel" src="https://zeuss.b-cdn.net/riohacks/static/img/tech-lines.png">
+    </div>
+
+
+    <div class="hero-area">
+      <div class="container-hero-area">
+        <h1 class="title-hero-area">Você busca <br class="mobile"><b id="script-animation">inovação</b><b class="bar">|</b><br><span>pro seu negócio?</span></h1>
+        <div class="big-header-button" style="z-index:10" onclick="window.location.href='#contato'">
+          <i class="fa-solid fa-star" id="star-animation" style="position: absolute !important;top: -15px !important;left: -15px !important;font-size: 35px !important;z-index: 1 !important; pointer-events: none !important;transition: all 0.3s ease !important; color:white"></i>
+          Fale com um Especialista
+          <i class="fa-solid fa-star" id="star-animation" style="position: absolute !important;bottom: -5px !important;right: -5px !important;font-size: 20px !important;z-index: 1 !important; pointer-events: none !important;transition: all 0.3s ease !important; color:white"></i>
+        </div>
+        
+      </div>
+      <img class="illustration-abs" src="https://zeuss.b-cdn.net/riohacks/static/img/laptop-illust.png">
+    </div>
+    
+    <div class="section" id="services-section">
+      <img class="divider" src="https://zeuss.b-cdn.net/riohacks/static/img/tech-d-4.png" alt="divider">
+      <h1 class="title-section" id="servicos"><b><i class="fa-solid fa-briefcase"></i></b> Nossos Serviços</h1>
+      <div class="cards-group">
+        <div class="card">
+          <i class="fa-brands fa-dev"></i>
+          <h3>Desenvolvimento de Software sob Medida</h3>
+          <p>Desenvolvimento de software personalizado de acordo com as necessidades do cliente, garantindo soluções otimizadas para seu negócio.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-gears"></i>
+          <h3>Integração de Sistemas</h3>
+          <p>Conectamos diferentes plataformas e sistemas para garantir que todos os seus dados fluam de maneira eficiente e segura.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <h3>Consultoria em Transformação Digital</h3>
+          <p>Assessoria completa para empresas que buscam adotar novas tecnologias e otimizar seus processos por meio da digitalização.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-code"></i>
+          <h3>Desenvolvimento de Sites e E-commerce</h3>
+          <p>Criação de sites modernos e responsivos, com foco em SEO e experiência do usuário, para fortalecer a presença digital da sua empresa.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-robot"></i>
+          <h3>Automação de Processos</h3>
+          <p>Automatizamos processos manuais para que sua equipe possa se concentrar em tarefas mais estratégicas.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-hexagon-nodes-bolt"></i>
+          <h3>Soluções em Inteligência Artificial e Machine Learning</h3>
+          <p>Implementamos soluções de IA e aprendizado de máquina para alavancar a tomada de decisão e análise de dados.</p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-toolbox"></i>
+          <h3>Manutenção e Suporte Técnico</h3>
+          <p>Oferecemos suporte contínuo para manter seus sistemas sempre operacionais e otimizados.</p>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="clients-section">
+      <img class="divider" src="https://zeuss.b-cdn.net/riohacks/static/img/tech-d-2.png">
+      <h1 class="title-section" id="clientes"><b><i class="fa-solid fa-mug-hot"></i></b> Nossos Clientes</h1>
+      <img class="small-divider" src="https://zeuss.b-cdn.net/riohacks/static/img/tech-d-3.png">
+      <div class="badge-carousel">
+        <img class="object-carousel" src="https://zeuss.b-cdn.net/riohacks/static/img/aetha-logo.png" alt="Logo Aetha">
+        <img class="object-carousel" src="https://zeuss.b-cdn.net/riohacks/static/img/autseg-logo.png" alt="Logo Autseg">
+        <img class="object-carousel" src="https://zeuss.b-cdn.net/riohacks/static/img/casadoivo-logo.png" alt="Logo Casa do Ivo">
+        <img class="object-carousel" src="https://zeuss.b-cdn.net/riohacks/static/img/correria-logo.png" alt="Logo Correria">
+        <img class="object-carousel" src="https://zeuss.b-cdn.net/riohacks/static/img/marca-logo.png" alt="Logo Marca">
+      </div>
+
+      <img class="small-divider" src="https://zeuss.b-cdn.net/riohacks/static/img/tech-d-1.png">
+    </div>
+    <hr style="opacity:0" id="contato">
+    <div class="section" id="contact-section">
+      <div class="big-badge">
+        <h1>Está pronto para impulsionar seu negócio?</h1>
+        <img class="illustration" src="https://zeuss.b-cdn.net/riohacks/static/img/animation-1.gif">
+        <div class="second-column">
+          <p>
+          Na <b>RioHacks</b>, oferecemos <b>soluções tecnológicas personalizadas</b> que atendem às <b>necessidades específicas</b> da sua empresa. <b>Entre em contato</b> com nossa equipe e <b>descubra como podemos ajudar sua empresa a crescer, inovar e se destacar no mercado</b>. Solicite agora um orçamento <b>sem compromisso</b> e descubra o que a tecnologia pode fazer <b>pelo seu negócio</b>!
+          </p>
+          <div class="btn-contact" onclick="window.open('https://wa.me/5593984010771', '_blank');">
+            <i class="fa-solid fa-star" id="star-animation" style="position: absolute !important;top: -15px !important;left: -15px !important;font-size: 35px !important;z-index: 1 !important; pointer-events: none !important;transition: all 0.3s ease !important; color:white"></i>
+
+            <i class="fa-brands fa-whatsapp"></i> Solicitar uma proposta
+
+            <i class="fa-solid fa-star" id="star-animation" style="position: absolute !important;bottom: -5px !important;right: -5px !important;font-size: 20px !important;z-index: 1 !important; pointer-events: none !important;transition: all 0.3s ease !important; color:white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="columns">
+        <img class="logo" src="https://zeuss.b-cdn.net/riohacks/static/img/riohacks-white-icon.png">
+        <div class="row">
+          <h2>Nos contate em...</h2>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i> E-mail: <b onclick="window.open('mailto:contato@riohacks.com.br', '_blank');">contato@riohacks.com.br</b></li>
+            <li><i class="fa-brands fa-whatsapp"></i> WhatsApp: <b onclick="window.open('https://wa.me/5593984010771', '_blank');">(93)99196-3307</b></li>
+          </ul>
+        </div>
+        <div class="row">
+          <h2>Nos encontre em...</h2>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> <b onclick="window.open('https://www.google.com/maps/dir/-2.4313856,-54.7323904/RioHacks+-+Solu%C3%A7%C3%B5es+em+Tecnologia+-+Av.+Mendon%C3%A7a+Furtado,+2417+-+Aldeia,+Santar%C3%A9m+-+PA,+68040-050/@-2.4282478,-54.7334702,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x9288f9b8b1ce7dcf:0xddbe7b4c02687474!2m2!1d-54.7241065!2d-2.4252137?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D', '_blank');">Av. Mendonça Furtado, 2417, Aldeia, Santarém/PA</b></li>
+            <li><i class="fa-brands fa-instagram"></i> Instagram: <b onclick="window.open('https://www.instagram.com/riohacks_/', '_blank');">@riohacks_</b></li>
+            <li><i class="fa-brands fa-linkedin"></i> LinkedIn: <b onclick="window.open('https://www.linkedin.com/company/riohacks-solu%C3%A7%C3%B5es-em-tecnologia', '_blank');">RioHacks Soluções em Tecnologia</b></li>
+          </ul>
+        </div>
+      </div>
+      <img class="circuits-abs" src="https://zeuss.b-cdn.net/riohacks/static/img/tech-lines.png">
+    </div>
+    
+    
+<script>
+  function openDrawer() {
+        document.getElementById("side-panel").style.right = "0";
+        document.getElementById("overlay").style.visibility = "visible";
+        document.getElementById("overlay").style.opacity = "1";
+    }
+    
+    function closeDrawer() {
+        document.getElementById("side-panel").style.right = "-80%";
+        document.getElementById("overlay").style.visibility = "hidden";
+        document.getElementById("overlay").style.opacity = "0";
+    }
+  document.addEventListener('DOMContentLoaded', () => {
+    
+    
+    const scriptAnimation = document.getElementById('script-animation');
+    const phrases = ['inovação', 'tecnologia', 'software'];
+    let index = 0;
+
+    function typeEffect() {
+        scriptAnimation.textContent = '';
+        scriptAnimation.classList.add('erasing');
+        scriptAnimation.classList.add('writing');
+        let i = 0;
+        const text = phrases[index];
+        const interval = setInterval(() => {
+            scriptAnimation.textContent += text[i];
+            i++;
+            if (i === text.length) {
+                clearInterval(interval);
+                setTimeout(() => {
+                    eraseEffect();
+                }, 1000); // Espera 1 segundo antes de borrar
+            }
+        }, 150); // Velocidad de escritura
+    }
+
+    function eraseEffect() {
+        scriptAnimation.classList.add('writing');
+        scriptAnimation.classList.add('erasing');
+        let i = scriptAnimation.textContent.length;
+        const interval = setInterval(() => {
+            scriptAnimation.textContent = scriptAnimation.textContent.slice(0, i - 1);
+            i--;
+            if (i === 0) {
+                clearInterval(interval);
+                setTimeout(() => {
+                    index = (index + 1) % phrases.length;
+                    typeEffect();
+                }, 1000); // Espera 1 segundo antes de escribir la siguiente palabra
+            }
+        }, 150); // Velocidad de borrado
+    }
+
+    typeEffect(); // Inicia la animación
+
+    const carousel = document.querySelector(".badge-carousel");
+    const track = document.createElement("div");
+    track.classList.add("carousel-track");
+
+    // Tomamos todos los elementos originales
+    const items = Array.from(document.querySelectorAll(".object-carousel"));
+
+    // Agregamos los elementos originales al track
+    items.forEach((item) => {
+        track.appendChild(item.cloneNode(true));
+    });
+
+    // Duplicamos el grupo completo para el efecto infinito
+    items.forEach((item) => {
+        track.appendChild(item.cloneNode(true));
+    });
+
+    carousel.innerHTML = ""; // Limpiamos el contenido original
+    carousel.appendChild(track);
+
+    const cards = document.querySelectorAll(".card");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, {
+        threshold: 0.2, // La tarjeta será visible cuando el 20% esté en pantalla
+    });
+
+    cards.forEach((card) => {
+        observer.observe(card);
+    });
+});
+
+</script>
+</body>
+</html>
+
